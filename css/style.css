@@ -1,0 +1,32 @@
+
+#grid_wrapper {
+    grid-template-rows: 50px 500px 450px minmax(100px,1fr);
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+    "na"
+    "we"
+    "bo"
+    "fo";
+}
+
+#navbar {
+    grid-area: na;
+    display: flex;
+}
+
+#welcome {
+    grid-area: we;
+    text-align: center;
+    
+}
+
+#bottom {
+    grid-area: bo;
+    text-align: center;
+}
+
+#footer {
+    grid-area: fo;
+    display: flex;
+}
