@@ -13,6 +13,7 @@
 #navbar {
     grid-area: na;
     display: flex;
+    justify-content: center;
 }
 
 #welcome {
@@ -29,4 +30,20 @@
 #footer {
     grid-area: fo;
     display: flex;
+}
+
+/* Page 2 */
+
+#navbar2 {
+    grid-area: na2;
+    display: flex;
+    justify-content: center;
+}
+
+/* Page 3 */
+
+#navbar3 {
+    grid-area: na3;
+    display: flex;
+    justify-content: center;
 }
