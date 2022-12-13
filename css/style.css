@@ -26,13 +26,19 @@ a:hover {
 #grid_wrapper1 {
   display: grid;
   height: 100vh;
-  grid-template-rows: 40px 300px 500px minmax(100px, 1fr);
+  grid-template-rows: 40px 1fr 1fr minmax(100px, 1fr);
   grid-template-columns: 1fr;
   grid-template-areas:
     "na"
     "we"
     "bo"
     "fo";
+
+	background-image: url("../img/backgrounds/forest.jpg");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center;
+  	background-blend-mode: darken;
 }
 
 #navbar {
@@ -44,30 +50,24 @@ a:hover {
 
 #welcome {
   display: flex;
-  background-color: rgb(132, 120, 120);
   grid-area: we;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../img/animals/lynx.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
+  
 }
 
 #welcome_header {
   text-align: center;
-  color: rgb(255, 255, 255);
 }
 
 #welcome_text {
   text-align: left;
-  color: rgb(255, 255, 255);
 }
 
 #bottom {
   grid-area: bo;
-  text-align: center;
+  text-align: left;
+  word-wrap: wrap;
 }
 
 #footer {
@@ -80,16 +80,21 @@ a:hover {
 /* Page 2 */
 
 #grid_wrapper2 {
-  height: 100vh;
+  height: auto;
   display: grid;
-  grid-template-rows: 40px 1fr 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr;
   grid-template-columns: 1fr, 1fr;
 
   grid-template-areas:
     "na2 na2"
     "an an"
-    "re ti"
-    "em em";
+    "re ti";
+
+    background-image: url("../img/backgrounds/rainforest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: darken;
 }
 
 #navbar2 {
@@ -102,6 +107,9 @@ a:hover {
 #animals {
     grid-area: an;
     text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 4px ridge white;
+	color: white;
 }
 
 #animal_cards {
@@ -109,8 +117,8 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+	color: white;
 }
-
 .article_animal {
     display: flex;
     text-align: center;
@@ -128,6 +136,9 @@ a:hover {
 #restaurant {
     grid-area: re;
     text-align: center;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 4px ridge white;
 }
 
 #dish_cards {
@@ -135,6 +146,7 @@ a:hover {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+	color: white;
 }
 
 .img_dish {
@@ -145,20 +157,36 @@ a:hover {
 }
 
 #times {
-    grid-area: ti;
-    border: 4px ridge black;
-    width: 300px;
-    text-align: center;
-}
-
-#employees {
-    grid-area: em;
+  grid-area: ti;
+  border: 4px ridge white;
+  width: 500px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 200px;
 }
 
 /* Page 3 */
 
+#grid_wrapper3 {
+	height: 100vh;
+  	display: grid;
+  	grid-template-rows: 1fr 1fr 1fr;
+  	grid-template-columns: 1fr, 1fr;
+
+  	grid-template-areas:
+  	"na na"
+  	"om om"  
+  	"em em";
+}
+
 #navbar3 {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: darkgreen;
+  	grid-area: na;
+  	display: flex;
+  	justify-content: space-evenly;
+  	background-color: darkgreen;
+}
+
+#employees {
+  	grid-area: em;
 }
