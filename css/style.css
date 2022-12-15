@@ -25,8 +25,8 @@ a:hover {
 
 #grid_wrapper1 {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 40px 1fr 1fr minmax(100px, 1fr);
+  height: 200vh;
+  grid-template-rows: 40px 1fr 1fr minmax(50px, 100px);
   grid-template-columns: 1fr;
   grid-template-areas:
     "na"
@@ -34,11 +34,11 @@ a:hover {
     "bo"
     "fo";
 
-	background-image: url("../img/backgrounds/forest.jpg");
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	background-position: center;
-  	background-blend-mode: darken;
+  background-image: url("../img/backgrounds/forest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
 }
 
 #navbar {
@@ -49,11 +49,19 @@ a:hover {
 }
 
 #welcome {
-  display: flex;
   grid-area: we;
+  background: url("../img/animals/deer.jpg") repeat rgba(255, 255, 255, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+#welcome_info {
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  
+  align-items: center;
 }
 
 #welcome_header {
@@ -65,9 +73,12 @@ a:hover {
 }
 
 #bottom {
+  display: flex;
   grid-area: bo;
-  text-align: left;
-  word-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  align-items: center;
 }
 
 #footer {
@@ -75,6 +86,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   text-align: left;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Page 2 */
@@ -136,24 +149,24 @@ a:hover {
 #restaurant {
     grid-area: re;
     text-align: center;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.3);
-	border: 4px ridge white;
+	  color: white;
+	  background-color: rgba(0, 0, 0, 0.8);
+	  border: 4px ridge white;
 }
 
 #dish_cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-	color: white;
+	  color: white;
 }
 
 .img_dish {
-  border: 3px solid black;
-  border-radius: 10%;
-  width: 300px;
-  height: 300px;
+    border: 3px solid black;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
 }
 
 #times {
@@ -171,12 +184,12 @@ a:hover {
 #grid_wrapper3 {
 	height: 100vh;
   	display: grid;
-  	grid-template-rows: 1fr 1fr 1fr;
+  	grid-template-rows: 40px 1fr 1fr;
   	grid-template-columns: 1fr, 1fr;
 
   	grid-template-areas:
   	"na na"
-  	"om om"  
+  	"in in"  
   	"em em";
 }
 
@@ -187,6 +200,38 @@ a:hover {
   	background-color: darkgreen;
 }
 
+#info {
+  grid-area: in;
+  
+}
+
+#historia {
+  display: flex;
+  border: 4px ridge white;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: space-around;
+  
+}
+
 #employees {
   	grid-area: em;
+}
+
+p {
+  text-overflow: ellipsis;
+  max-width: 300px;
+  letter-spacing: 2px;
+}
+
+#img_papegoja {
+  width: 500px;
+  height: auto;
+  position: relative;
+  left: 300px;
+}
+
+.header_center {
+  text-align: center;
 }
