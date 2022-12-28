@@ -54,7 +54,6 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
 }
 
 #welcome_info {
@@ -62,6 +61,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  
 }
 
 #welcome_header {
@@ -69,7 +69,10 @@ a:hover {
 }
 
 #welcome_text {
-  text-align: left;
+    text-align: left;
+    border: 3px solid black;
+    border-radius: 0%;
+    background-color:  rgba(255, 255, 255, 0.7);
 }
 
 #bottom {
@@ -77,8 +80,13 @@ a:hover {
   grid-area: bo;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.7);
+
   align-items: center;
+}
+
+#bottom_text {
+  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #footer {
@@ -87,7 +95,7 @@ a:hover {
   justify-content: space-between;
   text-align: left;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Page 2 */
@@ -120,9 +128,8 @@ a:hover {
 #animals {
     grid-area: an;
     text-align: center;
-	background-color: rgba(0, 0, 0, 0.3);
-	border: 4px ridge white;
-	color: white;
+	  background-color: rgba(255, 255, 255, 0.3);
+	  border: 3px solid black;
 }
 
 #animal_cards {
@@ -130,7 +137,6 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-	color: white;
 }
 .article_animal {
     display: flex;
@@ -142,16 +148,15 @@ a:hover {
 .img_animal {
     border: 3px solid black;
     border-radius: 10%;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
 }
 
 #restaurant {
     grid-area: re;
     text-align: center;
-	  color: white;
-	  background-color: rgba(0, 0, 0, 0.8);
-	  border: 4px ridge white;
+	  background-color: rgba(255, 255, 255, 0.3);
+	  border: 3px solid black;
 }
 
 #dish_cards {
@@ -159,7 +164,6 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-	  color: white;
 }
 
 .img_dish {
@@ -171,12 +175,14 @@ a:hover {
 
 #times {
   grid-area: ti;
-  border: 4px ridge white;
+  border: 3px solid black;
   width: 500px;
   text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:  rgba(255, 255, 255, 0.3);
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Page 3 */
@@ -207,7 +213,7 @@ a:hover {
 
 #historia {
   display: flex;
-  border: 4px ridge white;
+  border: 3px solid black;
   flex-direction: row;
   align-items: center;
   text-align: left;
@@ -226,10 +232,11 @@ p {
 }
 
 #img_papegoja {
-  width: 500px;
+  width: 600px;
   height: auto;
   position: relative;
   left: 300px;
+  bottom: 90px;
 }
 
 .header_center {
